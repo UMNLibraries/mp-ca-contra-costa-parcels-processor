@@ -1,0 +1,20 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+geopandas = "*"
+jupyter = "*"
+pytest = "*"
+click = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.12"
+
+[scripts]
+#my_func_with_args = {call = "package.module:func('arg1', 'arg2')"}
+processor = {call = "processor.__main__:cli()"}
+
